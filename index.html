@@ -17,6 +17,7 @@
         <ol>
           <li ng-repeat="item in showList.items">
             {{ item.quantity }} of {{ item.name }}
+            <button ng-click="showList.removeItem($index);">remove Item</button>
           </li>
         </ol>
         </div>
